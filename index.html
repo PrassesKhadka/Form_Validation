@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Form Validation Using JS->Constraint Validation API</title>
+</head>
+<body>
+    <!--Browser form ->Email, Country, Zip Code, Password and 
+        Password Confirmation-> use live inline validation 
+        to inform the user whether a field is properly 
+        filled in or not. That means highlighting
+        a field red and providing a helpful error message
+        until it has been filled in properly. -->
+
+    <!-- The form doesn’t need to actually submit, but you should give an error message 
+        if the button is pushed with any active errors or unfilled required fields.
+        For the sake of this lesson, make sure all of the validation occurs in 
+        the JavaScript file. If all is well and the form is “submitted”,
+        give the user a high five. -->
+    <form novalidate> 
+        <ul>
+            <li>
+                <label for="mail" name="mail" >Email:</label>
+                <input type="email" id="mail" required>
+                <span class="error-message"></span>
+            </li>
+            
+        </ul>
+    </form>   
+
+
+    <script src="script.js"></script>
+</body>
+</html>
